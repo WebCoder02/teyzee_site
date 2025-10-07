@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>TeyZee Booking</title>
+</head>
+
+<body>
+    <!-- Green NavBar -->
+    <nav class="nav1">
+        <div class="top-row">
+            <div class="logo">
+                <a href="index.html">
+                    <img alt="Teyzee Sites Logo" src="images/teyzee_sites_logo.png" />
+                </a>
+            </div>
+            <div class="nav-subheading">
+                <h4>TEYZEE BOOKING</h4>
+            </div>
+            <button class="menu-toggle">☰</button>
+        </div>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="storefront_index.html">Storefront</a></li>
+            <li><a href="menu_index.html">Menu</a></li>
+            <li><a href="#">Booking</a></li>
+        </ul>
+    </nav>
+    <!-- Hero Section -->
+    <section class="hero-booking">
+        <div class="hero-content">
+            <h1 class="hero-title">🌟 Booking Website Previews</h1>
+            <p class="hero-subtitle">✨ Smart, seamless, and stunning — your booking website reimagined.</p>
+            <div class="hero-emojis">
+                💇‍♀️ 🩺 🏡
+            </div>
+            <button class="hero-button">Explore Previews</button>
+        </div>
+    </section>
+    <!-- Booking Preview Section -->
+    <section class="booking-section">
+        <!-- Top Hero Image -->
+        <img src="https://via.placeholder.com/600x250" alt="Booking Preview" class="booking-image" />
+
+        <h2 class="booking-heading">Explore Booking Previews ✨</h2>
+        <p class="booking-subtitle">
+            See how your service can shine online — elegant, responsive, and easy to use.
+        </p>
+
+        <div class="booking-cards">
+            <!-- Salon Booking -->
+            <div class="booking-card">
+                <img src="images/image.png" alt="Salon Booking" class="card-image" />
+                <h3>💇‍♀️ Salon Booking</h3>
+                <p>Showcase modern salon layouts with smooth appointment previews.</p>
+                <a href="https://example.com" class="card-btn">View Preview</a>
+            </div>
+
+            <!-- Doctor Booking -->
+            <div class="booking-card">
+                <img src="images/image.png" alt="Doctor Booking" class="card-image" />
+                <h3>🩺 Doctor Booking</h3>
+                <p>Professional design for clinics and specialists with smart scheduling UI.</p>
+                <a href="https://example.com" class="card-btn">View Preview</a>
+            </div>
+
+            <!-- Homestay Booking -->
+            <div class="booking-card">
+                <img src="images/image.png" alt="Homestay Booking" class="card-image" />
+                <h3>🏡 Homestay Booking</h3>
+                <p>Inviting and clean layouts for showcasing cozy stays and rentals.</p>
+                <a href="https://example.com" class="card-btn">View Preview</a>
+            </div>
+        </div>
+    </section>
+    <!-- Additional Information Section -->
+    <section class="additional-info">
+        <h2 class="info-heading">Additional Information ℹ️</h2>
+        <p class="info-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget velit vitae justo ullamcorper feugiat.
+            Vivamus laoreet, neque ut tempus pretium, justo felis euismod nunc, nec gravida risus mauris ac nulla.
+            Phasellus sit amet augue in nisi ultricies fermentum. Sed ut turpis ac neque tincidunt ultrices.
+            Suspendisse potenti. Nam euismod, eros in efficitur facilisis, metus arcu facilisis sem, at aliquam nisl
+            erat at nibh. In hac habitasse platea dictumst.
+        </p>
+    </section>
+
+
+
+
+    <div class="footer">
+        <p>&copy; 2025 TeyZEE is a brand of Kall Trip Pvt Ltd, Mumbai, India. All rights reserved.</p>
+        <div class="contact-info">
+            <p>
+                Contact us:
+                <a href="https://wa.me/919029027420" target="_blank">
+                    <span class="icon">📱</span> WhatsApp
+                </a> |
+                Office - WeWork Platinum, Marol, Andheri East Mumbai 400059 India |
+                <a href="mailto:ariaprohotels@kalltrip.com?subject=Teyzee Menus Enquiry&body=Hello, I would like to inquire about Teyzee menus!"
+                    target="_blank">
+                    <span class="icon">✉️</span> Email Us
+                </a>
+            </p>
+        </div>
+    </div>
+    <script>
+        // Toggle menu on click
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('nav ul');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>
