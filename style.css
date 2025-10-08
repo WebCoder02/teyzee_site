@@ -46,7 +46,44 @@
  nav ul li a:hover {
    color: #c8e6c9;
  }
+ /* Hide nav links on mobile, show hamburger */
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+  }
+  nav ul.active {
+    display: block;
+    /* Add mobile styles for open menu */
+  }
+  .menu-togglebutton {
+    display: inline-block;
+  }
+  .nav-subheading {
+   padding-top: 15px;
+   text-align: center;
+   font-size: 1.4rem;
+   font-weight: 600;
+   height: 50px;
+ }
+}
 
+/* Show nav links on desktop, hide hamburger */
+@media (min-width: 769px) {
+  nav ul {
+    display: flex;
+  }
+  .menu-togglebutton {
+    display: none;
+  }
+  .nav-subheading {
+   padding-top: 15px;
+   text-align: center;
+   font-size: 1.4rem;
+   font-weight: 600;
+   height: 50px;
+   margin-left: 15%;
+ }
+}
  /* Mobile menu button (hamburger ☰) */
  .menu-toggle {
    display: none;
@@ -115,28 +152,33 @@
      display: block;
    }
  }
-
- /* Container */
- .container {
-   display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-   gap: 25px;
-   max-width: 1200px;
-   margin: 40px auto;
-   padding: 0 20px;
- }
-
  /* Panels */
- .panel {
-   background: white;
-   border-radius: 12px;
-   padding: 30px 20px;
-   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-   transition: transform 0.3s ease, box-shadow 0.3s ease;
-   cursor: pointer;
-   position: relative;
-   overflow: hidden;
- }
+.panel {
+  background: #fff;
+  border-radius: 12px;
+  padding: 30px 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 380px;
+  margin: 22px auto; /* vertical margin for spacing, auto to center */
+  min-height: 340px; /* force panels to equal height, adjust as you want */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 768px) {
+  .panel {
+    padding: 20px 15px;
+    max-width: 95vw;
+    min-height: 280px; /* smaller min height for mobile if needed */
+  }
+}
 
  .panel:hover {
    transform: translateY(-8px);
@@ -267,7 +309,7 @@
    display: flex;
    justify-content: space-between;
    align-items: center;
-   width: 100%;
+   width: auto;
    /* full width row */
  }
 
@@ -276,22 +318,6 @@
    width: auto;
  }
 
- .menu-toggle {
-   display: block;
-   font-size: 1.8rem;
-   cursor: pointer;
-   background: none;
-   border: none;
-   color: white;
- }
-
- .nav-subheading {
-   margin-top: -20px;
-   text-align: center;
-   font-size: 1.5rem;
-   font-weight: 600;
-   height: 70px;
- }
 
  /* Menu list */
  .nav1 ul {
@@ -575,29 +601,12 @@
    display: flex;
    justify-content: space-between;
    align-items: center;
-   width: 100%;
+   width: auto;
  }
 
  .logo img {
    height: 80px;
    width: auto;
- }
-
- .menu-toggle {
-   display: block;
-   font-size: 1.8rem;
-   cursor: pointer;
-   background: none;
-   border: none;
-   color: white;
- }
-
- .nav-subheading {
-   padding-top: 10px;
-   text-align: center;
-   font-size: 1.4rem;
-   font-weight: 600;
-   height: 50px;
  }
 
  .nav2 ul {
