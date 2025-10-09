@@ -1125,6 +1125,12 @@
   align-items: center;
   text-align: center;
 }
+.booking-card ul {
+  list-style-type: none;
+}
+.booking-card h2 {
+  margin-bottom: 15px;
+}
 
 .booking-card:hover {
   transform: translateY(-3px);
@@ -1166,6 +1172,7 @@
   font-size: 0.9rem;
   font-weight: 600;
   transition: all 0.3s ease;
+  margin-top: 10px;
 }
 
 .card-btn:hover {
